@@ -4,11 +4,11 @@ export default (app: Application) => {
     const { STRING, INTEGER } = app.Sequelize;
     const User = app.model.define('users', {
         id: { type: INTEGER, primaryKey: true, autoIncrement: true },
-        userName: {
+        username: {
             type: STRING,
             allowNull: false
         },
-        passWord: {
+        password: {
             type: STRING,
             allowNull: false
         }

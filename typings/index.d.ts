@@ -13,6 +13,7 @@ declare module 'egg' {
 }
 declare module 'sequelize' {
     interface Model {
-        passWord: String;
+        password: string;
+        token: string;
     }
 }

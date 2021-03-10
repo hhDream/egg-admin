@@ -28,6 +28,10 @@ export default (appInfo: EggAppInfo) => {
         allowMethods: 'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS',
     };
 
+    config.jwt = {
+        secret: '123456'
+    }
+
     config.security = {
         domainWhiteList: [
             'localhost:3000',

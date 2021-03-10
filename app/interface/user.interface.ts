@@ -6,7 +6,7 @@
  * @LastEditors: Fenghua Zhang
  */
 export interface UserInsterface {
-    userName: string,
+    username: string,
     passWord: string,
     id: string
 }
