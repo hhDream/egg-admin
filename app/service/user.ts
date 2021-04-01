@@ -2,7 +2,7 @@
  * @Description:
  * @Author: Fenghua Zhang
  * @Date: 2021-03-10 11:23:32
- * @LastEditTime: 2021-03-22 15:45:05
+ * @LastEditTime: 2021-03-31 16:21:31
  * @LastEditors: Fenghua Zhang
  */
 
@@ -29,7 +29,10 @@ export default class User extends Service {
         {
           username: username,
         },
-        app.config.jwt.secret
+        app.config.jwt.secret,
+        {
+          expiresIn: "60m", // 过期时间
+        }
       );
       Code.SUCCESS.message = "登录成功";
       let userInfo = user.get("", { plain: true });

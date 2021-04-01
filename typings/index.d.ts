@@ -9,7 +9,7 @@ import 'egg';
 import 'sequelize'
 
 declare module 'egg' {
-
+    
 }
 declare module 'sequelize' {
     interface Model {
